@@ -38,15 +38,23 @@ a:hover{
 	width: 90%;
 	margin: 0 auto;
 }
+
+header{
+	min-height: 50px;
+}
 .header-content{
 	display: flex;
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
+	position: relative;
 }
 .logo{
 	font-family: 'Flatform', sans-serif;
 	font-size: 40px;
+	line-height: 50px;
+	padding-top: 5px;
+	vertical-align: center;
 	font-weight: lighter;
 }
 .nav-list{
@@ -67,9 +75,12 @@ a:hover{
 .burger{
 	display: none;
 	justify-content: center;
+	position: fixed;
+	top: 12px;
+	right: 0;
 	width: 26px;
 	height: 26px;
-	border: 2px solid #4d4d4d;
+	border: 2px solid #6d6d6d;
 	padding: 5px 0 0 3px;
 }
 .line:first-child{
@@ -80,7 +91,7 @@ a:hover{
 	margin-top: 3px;
 	width: 16px;
 	height: 2px;
-	background-color: #4d4d4d;
+	background-color: #6d6d6d;
 }
  
 .billboard{
@@ -344,9 +355,9 @@ footer h2{
 } */
 
 @media (max-width: 425px){
-	.logo{
+	/* .logo{
 		font-size: 18px;
-	}
+	} */
 	.nav-list{
 		font-size: 11px;
 	}
@@ -387,9 +398,9 @@ footer h2{
 	.container{
 		width: 100%;
 	}
-	.logo{
+	/* .logo{
 		font-size: 20px;
-	}
+	} */
 	.nav-list{
 		font-size: 14px;
 	}
@@ -402,15 +413,17 @@ footer h2{
 @media (max-width: 765px){
 	.header-content{
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.nav-list li{
 		width: 100%;
-		text-align: right;
+		text-align: center;
 		padding: 5px;
 	}
 	nav[role="navigation"]{
 		display: none;
 		width: 100%;
+		border-top: 1px solid #e7e7e7;
 	}
 	.burger{
 		display: block;
