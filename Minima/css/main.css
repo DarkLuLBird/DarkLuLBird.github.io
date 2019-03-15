@@ -54,7 +54,7 @@ header{
 	font-size: 40px;
 	line-height: 50px;
 	padding-top: 5px;
-	vertical-align: center;
+	vertical-align: middle;
 	font-weight: lighter;
 }
 .nav-list{
@@ -75,7 +75,7 @@ header{
 .burger{
 	display: none;
 	justify-content: center;
-	position: fixed;
+	position: absolute;
 	top: 12px;
 	right: 0;
 	width: 26px;
