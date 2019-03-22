@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    font-family: sans-serif;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+}
+.btn{
+    display: block;
+    padding: 15px 70px !important;
+    background-color: #c8151b;
+    border-radius: 8px;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+}
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.top-nav{
+    width: 100%;
+    background-color: #c8151b;
+    padding: 15px 0;
+    min-height: 50px;
+}
+
+.top-info{
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.info__img{
+    width: 276px;
+    height: 96px;
+}
+.info__img img{
+    height: 100%;
+    max-width: 276px;
+    width: 100%;
+}
+.schedule__workhours{
+    text-align: center;
+    line-height: 25px;
+}
+.contacts__item{
+    padding: 5px;
+}
+.contacts__name{
+    text-align: left;
+    margin-right: 20px;
+    width: 90px;
+}
+.contacts__info{
+    text-align-last: left;
+}
+
+.top-banner{
+    /* min-height: 495px; */
+    height: 80vh;
+    background: url(../img/bg.png) no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 555px){
+    .top-nav a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        padding: 3px 0;
+    }
+    .top-nav > .container{
+        flex-direction: column;
+        /* background-color: #fff; */
+    }
+}
+
+@media (min-width: 555px) and (max-width: 650px){
+    .top-nav a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 820px){
+    .top-info > .container > div{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .contacts__item{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 890px){
+    .container{
+        width: 100%;
+    }
+}
